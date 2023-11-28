@@ -1,0 +1,139 @@
+#JC SOCITIES(REAL ESTATE MANAGEMENT)
+print(" HELLO AND WELCOME TO THE 'JC SOCITIES' (ALWAYS IN FAVOUR OF YOU)")
+import pickle
+#                                  The Main Menu
+def main_menu():
+    print("\n\t Welcome to the 'Employee Menu'")
+    print("1. CUSTOMER FILE")
+    print("2. PROPERTY FILE")
+    print("3. REGISTRATION OF HOUSE")
+    print("4. BILL GENERATION")
+    print("5. REPORT")
+    print("6. QUIT")
+    num= int(input("Enter the number[1-6]:"))
+    if num==1:
+        Customer_file()
+    if num ==2:
+        Property_file()
+    if num ==3:
+        House_Registration()
+    if num ==4:
+        Bill_Generation()
+    if num ==5:
+        Report()
+    if num ==6:
+        Quit()
+    else:
+        print("Choose a number between '1 to 6'")
+main_menu()
+
+
+
+#                                 Customer file
+def Customer_file():
+    print("Welcome to the customer portal")
+    print("1. Addition of a reoord")
+    print("2. Modification of a reoord")
+    print("3. Deletion of a reoord")
+    print("4. Main Menu")
+    num= int(input("Enter the number[1-4]:"))
+    if  num ==2 or num ==3:
+        SUB_CUSTOMER_FILE()
+    if num==1:
+        Customer_addition()
+    else:
+        main_menu()
+Customer_file()
+
+def SUB_CUSTOMER_FILE():
+    num= int(input("Enter the number of details to add:"))
+    for i in range(num):
+        ID=input(" Customer number:")
+        Name=input(" Customer name")
+        Contact=input("Contact number")
+        Add=input("Address")
+        Date=input("Date of registration")
+        Houseno=input("House No.")
+        Regisnum=input(" Registration number")
+SUB_CUSTOMER_FILE()
+
+def Customer_addition():
+    print("1. Customer number")
+    print("2. Customer name")
+    print("3. Contact number")
+    print("4. Address")
+    print("5. Date of Buying")
+    print("6. Date of Selling")
+    print("7. Registration number")
+
+    
+#                                  Property file
+def Property_file():
+    print("Welcome to the customer file")
+    print("1. Addition of a reoord")
+    print("2. Modification of a reoord")
+    print("3. Deletion of a reoord")
+    print("4. Main Menu")
+    num= int(input("Enter the number[1-4]:"))
+    if num ==2 or num ==3:
+        SUB_PROPERTY_FILE()
+    if num ==1:
+        House_addition()
+    else:
+        main_menu()
+Property_file()
+
+def SUB_PROPERTY_FILE():
+    print("1. House Number")
+    print("2. Composition of house (1BHK/2BHK/3BHK)")
+    print("3. Type of House (BUNGALOW/FLAT/APARTMENT...)")
+    print("4. Cost of house (if owner)")
+    print("5. Rent of house (if tenant)")
+    print("6. Name of previous owner (if any)")
+SUB_PROPERTY_FILE()
+
+def House_addition():
+    print("1. Registration number")
+    print("2. 1BHK/2BHK/3BHK(BEDROOM HALL KITCHEN)")
+    print("3. House Number")
+    print("4. Cost of house")
+    print("5. Area of house ")
+    print("6. Status of flat ('YES for OCCUPIED'/'NO for UNAVAILABLE')")
+    print("7. Type of room (Ordinary/semi-deluxe/Deluxe)")
+House_addition()
+
+
+#                            BILL GENERATION
+def Bill_Registration():
+    print("Owner number")
+    print("Registration number")
+    print("Owner name")
+    print("Date of buying")
+    print("Cost of house")
+    print("Overhead expenses:")
+   # AMOUNT= COST OF THE HOUSE + OVERHEAD EXPENSES
+   # GST = 0.1*AMOUNT
+   # DISCOUNT= 0.05*AMOUNT
+   #TOTAL = AMOUNT + GST - DISCOUNT + SECURITY
+Bill_Registration()
+
+#                             REPORT
+def Report():
+    print("List of all houses")
+    print("List of all customers")
+    print("List of all available houses")
+    print("Go to main menu")
+Report()
+
+
+print("THE END")
+
+    
+
+
+    
+
+    
+
+
+    
